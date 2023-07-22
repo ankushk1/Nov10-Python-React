@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Component1 from './Components/Component1';
+import StateComp from './Components/StateComp';
+import NonPrimState from './Components/NonPrimState';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Component1/> */}
+      {/* <StateComp/> */}
+      <NonPrimState/>
     </div>
   );
 }
