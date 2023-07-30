@@ -1,33 +1,18 @@
 import React from "react";
 import Component2 from "./component2";
 
-const name = "User 1";
-const age = 20;
-const arr = ["one", "two", "three"].join(" ");
-
-const obj = {
-  name: "ABC",
-  age: 40
-};
-
-const Component1 = () => {
+const Component1 = (props) => {
+  console.log(props);
+  const { username, age, children } = props;
   return (
     <>
-      <div id="comp1">
-        <p>
-          The name is {name} and the age is {age} {true}
-        </p>
+      <br />
+      <br />
+      Component1 <br />
+      {username} is {age} years old
 
-        <div>
-          <h2>{arr}</h2>
-        </div>
-      </div>
-
-      <div>
-        <h3>{obj.name}</h3>
-        <h3>{obj.age}</h3>
-      </div>
-      {/* <Component2 /> */}
+      <h2>{children}</h2>
+      {/* <Component2 username="user 2" {...props}  /> */}
     </>
   );
 };

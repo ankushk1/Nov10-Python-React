@@ -1,4 +1,5 @@
-const Component2 = () => {
+const Component2 = (props) => {
+  console.log("Component 2", props);
   return (
     <div>
       <p>This is Component 2</p>
@@ -7,4 +8,5 @@ const Component2 = () => {
 };
 
 export default Component2;
+
 
